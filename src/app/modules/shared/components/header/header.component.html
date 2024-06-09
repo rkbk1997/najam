@@ -1,0 +1,196 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <div class="logo-section d-flex boxGreen">
+        <a class="toggleMenu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight">
+          <span class="navbar-toggler-icon"></span>
+        </a>
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logo.png" alt="Logo" />
+        </a>
+      </div>
+      <div class="d-flex boxGreen headerLeft align-items-center justify-content-between mx-2">
+        <h2 class="heaterTitle fw-medium ps-4 mb-0">{{'main' | translate}}</h2>
+        <div class="d-flex align-items-center column-gap-15">
+          <div class="d-flex column-gap-15 ms-3">
+            <div class="systemBox d-flex align-items-center" (click)="openServicePage()">
+              <img src="assets/img/dashboardboxicon.svg" class="img-fluid">
+              <div class="systemBoxLabel fw-medium">{{'Systems_administration' | translate }}</div>
+            </div>
+            <div class="systemBox d-flex align-items-center">
+              <img src="assets/img/star.svg" class="img-fluid">
+              <div class="systemBoxLabel fw-medium">أنظمتي</div>
+            </div>
+          </div>
+          <a role="button" class="languageIcon fw-bold ms-3" (click)="changeLanguage()">{{userLanguage === 'ar' ? 'EN' : 'AR' | uppercase}}</a>
+          <div class="notificationIcon position-relative ms-3">
+            <img src="assets/img/bell.svg" alt="" />
+            <span
+              class="position-absolute top-75 start-100 translate-middle p-1 bg-warning border border-light rounded-circle">
+              <span class="visually-hidden">New alerts</span>
+            </span>
+          </div>
+          <div>
+            <div class="d-flex align-items-center ms-3">
+              <div class="dropdown userMemu">
+                <div class="userImg rounded-circle ms-2">
+                  <img src="assets/img/profile.svg" alt="" />
+                </div>
+                <a class="dropdown-toggle cursor-pointer" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                  aria-expanded="false"></a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                      aria-label="Close"></button></li>
+                  <li class="p-3">
+                    <div class="d-flex flex-column border-bottom border-dark align-items-center">
+                      <div class="userProfile">
+                        <img src="assets/img/profilewhiteicon.svg" alt="" />
+                      </div>
+                      <div class="fs-20 fw-bold text-green">محمد خالد احمد الغانم</div>
+                      <div class="fs-15 text-muted pb-2">IT Projects Manager</div>
+                    </div>
+                  </li>
+                  <li class="p-3">
+                    <div class="middleHeading d-flex align-items-center column-gap-15 mb-4">
+                      <div
+                        class="headingIcon rounded-circle bg-orange d-flex align-items-center justify-content-center">
+                        <img src="assets/img/calendarwhite.svg" class="img-fluid p-2">
+                      </div>
+                      <h2 class="fs-20 fw-bold text-dark mb-0">اجتماعاتي القادمة</h2>
+                    </div>
+                    <div class="roundBox bg-white shadow rounded-4 p-3 mb-3">
+                      <div class="media d-flex">
+                        <div class="userSmallIcon bg-green">
+                          <img src="assets/img/users.svg" alt="" class="img-fluid" />
+                        </div>
+                        <div class="me-2 pb-0 fs-15 fw-medium text-green lh-1 text-right">مناقشة عامة افتراضية عن
+                          منصة مدار</div>
+                      </div>
+                      <div class="media-body d-flex justify-content-between">
+                        <div class="d-flex">
+                          <div class="fs-13 fw-medium text-dark lh-1">20/05</div>
+                          <span class="fs-13 fw-medium text-dark lh-1 px-1">|</span>
+                          <div class="fs-13 fw-medium text-dark lh-1">12:00 - 11:00</div>
+                        </div>
+                        <div class="m-0 pb-0 fs-15 text-dark lh-1">
+                          قاعة الثريا
+                        </div>
+                      </div>
+                    </div>
+                    <div class="roundBox bg-white shadow rounded-4 p-3 mb-3">
+                      <div class="media d-flex">
+                        <div class="userSmallIcon bg-green">
+                          <img src="assets/img/users.svg" alt="" class="img-fluid" />
+                        </div>
+                        <div class="me-2 pb-0 fs-15 fw-medium text-green lh-1 text-right">مناقشة عامة افتراضية عن
+                          منصة مدار</div>
+                      </div>
+                      <div class="media-body d-flex justify-content-between">
+                        <div class="d-flex">
+                          <div class="fs-13 fw-medium text-dark lh-1">20/05</div>
+                          <span class="fs-13 fw-medium text-dark lh-1 px-1">|</span>
+                          <div class="fs-13 fw-medium text-dark lh-1">12:00 - 11:00</div>
+                        </div>
+                        <div class="m-0 pb-0 fs-15 text-dark lh-1">
+                          قاعة الثريا
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="divider mx-3 my-2"></li>
+                  <li class="p-3">
+                    <div class="middleHeading d-flex align-items-center column-gap-15 mb-4">
+                      <div
+                        class="headingIcon rounded-circle bg-orange d-flex align-items-center justify-content-center">
+                        <img src="assets/img/calendarwhite.svg" class="img-fluid p-2">
+                      </div>
+                      <h2 class="fs-20 fw-bold text-dark mb-0">معلومات الاتصال</h2>
+                    </div>
+                    <div class="p-3 pt-0 mb-3">
+                      <form class="d-flex position-relative mt-1">
+                        <input class="form-control fs-13" type="search" placeholder="ابحث عن موظف" aria-label="Search">
+                        <button class="btn-search" type="submit"></button>
+                      </form>
+                    </div>
+                    <div class="roundBox shadow-none rounded-0 border-bottom border-dark pt-0 p-3 mb-0">
+                      <div class="media d-flex justify-content-between align-items-center mb-2">
+                        <img src="assets/img/profile-green.svg" alt="" class="img-fluid me-1" />
+                        <div class="pb-0 fs-12 fw-medium text-green lh-1 text-right">خالد عبدالله العمري</div>
+                        <div class="pb-0 fs-11 text-dark lh-1 text-right">IT Projects Manager</div>
+                      </div>
+                      <div class="media d-flex align-items-center justify-content-end">
+                        <div class="fs-11 text-dark lh-1">k.alamri <img src="assets/img/email.svg" class="me-1"></div>
+                        <span class="fs-11 text-dark lh-1 px-1">|</span>
+                        <div class="fs-11 text-dark lh-1">0505363251 <img src="assets/img/mobile.svg" class="me-1">
+                        </div>
+                        <span class="fs-11 text-dark lh-1 px-1">|</span>
+                        <div class="fs-11 text-dark lh-1">3625 <img src="assets/img/phone.svg" class="me-1"></div>
+                      </div>
+                    </div>
+                    <div class="roundBox shadow-none rounded-0 border-bottom border-dark p-3 mb-0">
+                      <div class="media d-flex justify-content-between align-items-center mb-2">
+                        <img src="assets/img/profile-green.svg" alt="" class="img-fluid me-1" />
+                        <div class="pb-0 fs-12 fw-medium text-green lh-1 text-right">خالد عبدالله العمري</div>
+                        <div class="pb-0 fs-11 text-dark lh-1 text-right">IT Projects Manager</div>
+                      </div>
+                      <div class="media d-flex align-items-center justify-content-end">
+                        <div class="fs-11 text-dark lh-1">k.alamri <img src="assets/img/email.svg" class="me-1"></div>
+                        <span class="fs-11 text-dark lh-1 px-1">|</span>
+                        <div class="fs-11 text-dark lh-1">0505363251 <img src="assets/img/mobile.svg" class="me-1">
+                        </div>
+                        <span class="fs-11 text-dark lh-1 px-1">|</span>
+                        <div class="fs-11 text-dark lh-1">3625 <img src="assets/img/phone.svg" class="me-1"></div>
+                      </div>
+                    </div>
+                    <div class="roundBox shadow-none rounded-0 p-3 mb-0">
+                      <div class="media d-flex justify-content-between align-items-center mb-2">
+                        <img src="assets/img/profile-green.svg" alt="" class="img-fluid me-1" />
+                        <div class="pb-0 fs-12 fw-medium text-green lh-1 text-right">خالد عبدالله العمري</div>
+                        <div class="pb-0 fs-11 text-dark lh-1 text-right">IT Projects Manager</div>
+                      </div>
+                      <div class="media d-flex align-items-center justify-content-end">
+                        <div class="fs-11 text-dark lh-1">k.alamri <img src="assets/img/email.svg" class="me-1"></div>
+                        <span class="fs-11 text-dark lh-1 px-1">|</span>
+                        <div class="fs-11 text-dark lh-1">0505363251 <img src="assets/img/mobile.svg" class="me-1">
+                        </div>
+                        <span class="fs-11 text-dark lh-1 px-1">|</span>
+                        <div class="fs-11 text-dark lh-1">3625 <img src="assets/img/phone.svg" class="me-1"></div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<!-- Side Menu -->
+<div class="offcanvas offcanvas-{{userLanguage === 'ar' ? 'end' : 'start'}} sideManuPanel" data-bs-backdrop="false"
+  tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <form class="d-flex position-relative mt-3">
+      <input class="form-control fs-13" type="search" placeholder="ابحث عن نظام" aria-label="Search">
+      <button class="btn-search" type="submit"></button>
+    </form>
+    <ul class="nav flex-column p-0 my-3">
+      <li class="nav-item">
+        <a class="nav-link py-2 active" aria-current="page" href="#">اسم النظام هنا اسم النظام هنا </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link py-2" href="#">اسم النظام هنا اسم النظام هنا </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link py-2" href="#">اسم النظام هنا اسم النظام هنا </a>
+      </li>
+    </ul>
+  </div>
+</div>

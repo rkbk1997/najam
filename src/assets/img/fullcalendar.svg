@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="884.94" height="335" viewBox="0 0 884.94 335">
+  <g id="fullcalendar" transform="translate(15769 17703)">
+    <g id="Rectangle_4120" data-name="Rectangle 4120" transform="translate(-15769 -17703)" fill="#fcfcfc" stroke="#c8c8c8" stroke-width="1">
+      <rect width="884.94" height="335" rx="8" stroke="none"/>
+      <rect x="0.5" y="0.5" width="883.94" height="334" rx="7.5" fill="none"/>
+    </g>
+    <text id="June_2023" data-name="June 2023" transform="translate(-15594.637 -17647.5)" fill="#33835c" font-size="18" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">June 2023</tspan></text>
+    <text id="Su" transform="translate(-15708.266 -17611.5)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Su</tspan></text>
+    <text id="Su-2" data-name="Su" transform="translate(-15293.703 -17611.5)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Su</tspan></text>
+    <text id="Mo" transform="translate(-15659.264 -17611.5)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Mo</tspan></text>
+    <text id="Mo-2" data-name="Mo" transform="translate(-15244.703 -17611.5)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Mo</tspan></text>
+    <text id="Tu" transform="translate(-15608.486 -17611.5)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Tu</tspan></text>
+    <text id="Tu-2" data-name="Tu" transform="translate(-15193.926 -17611.5)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Tu</tspan></text>
+    <text id="We" transform="translate(-15562.324 -17611.5)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">We</tspan></text>
+    <text id="We-2" data-name="We" transform="translate(-15147.764 -17611.5)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">We</tspan></text>
+    <text id="Th" transform="translate(-15510.393 -17611.5)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Th</tspan></text>
+    <text id="_1" data-name="1" transform="translate(-15505.805 -17583)" fill="#b7b7b7" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1</tspan></text>
+    <text id="_8" data-name="8" transform="translate(-15505.805 -17548)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">8</tspan></text>
+    <text id="_6" data-name="6" transform="translate(-15089.795 -17548)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">6</tspan></text>
+    <text id="_15" data-name="15" transform="translate(-15509.805 -17513)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">15</tspan></text>
+    <text id="_13" data-name="13" transform="translate(-15094.412 -17513)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">13</tspan></text>
+    <text id="_22" data-name="22" transform="translate(-15507.643 -17478)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">22</tspan></text>
+    <text id="_20" data-name="20" transform="translate(-15091.662 -17478)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">20</tspan></text>
+    <text id="_29" data-name="29" transform="translate(-15507.643 -17443)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">29</tspan></text>
+    <text id="_27" data-name="27" transform="translate(-15091.662 -17443)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">27</tspan></text>
+    <text id="_5" data-name="5" transform="translate(-15652.916 -17548)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">5</tspan></text>
+    <text id="_3" data-name="3" transform="translate(-15236.936 -17548)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">3</tspan></text>
+    <text id="_12" data-name="12" transform="translate(-15657.533 -17513)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">12</tspan></text>
+    <text id="_10" data-name="10" transform="translate(-15241.553 -17513)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">10</tspan></text>
+    <text id="_19" data-name="19" transform="translate(-15657.533 -17478)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">19</tspan></text>
+    <text id="_17" data-name="17" transform="translate(-15241.553 -17478)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">17</tspan></text>
+    <text id="_26" data-name="26" transform="translate(-15657.533 -17443)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">26</tspan></text>
+    <text id="_24" data-name="24" transform="translate(-15241.553 -17443)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">24</tspan></text>
+    <text id="_31" data-name="31" transform="translate(-15241.553 -17408)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">31</tspan></text>
+    <text id="_4" data-name="4" transform="translate(-15703.072 -17548)" fill="#b7b7b7" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">4</tspan></text>
+    <text id="_2" data-name="2" transform="translate(-15287.092 -17548)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2</tspan></text>
+    <text id="_11" data-name="11" transform="translate(-15707.111 -17513)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">11</tspan></text>
+    <text id="_9" data-name="9" transform="translate(-15291.805 -17513)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">9</tspan></text>
+    <text id="_18" data-name="18" transform="translate(-15707.111 -17478)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">18</tspan></text>
+    <text id="_16" data-name="16" transform="translate(-15291.805 -17478)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">16</tspan></text>
+    <text id="_25" data-name="25" transform="translate(-15707.111 -17443)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">25</tspan></text>
+    <text id="_23" data-name="23" transform="translate(-15291.805 -17443)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">23</tspan></text>
+    <text id="_30" data-name="30" transform="translate(-15291.805 -17408)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">30</tspan></text>
+    <text id="_2-2" data-name="2" transform="translate(-15458.805 -17583)" fill="#b7b7b7" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2</tspan></text>
+    <text id="_9-2" data-name="9" transform="translate(-15458.805 -17548)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">9</tspan></text>
+    <text id="_7" data-name="7" transform="translate(-15043.635 -17548)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">7</tspan></text>
+    <text id="_16-2" data-name="16" transform="translate(-15463.563 -17513)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">16</tspan></text>
+    <text id="_14" data-name="14" transform="translate(-15047.582 -17513)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">14</tspan></text>
+    <text id="_23-2" data-name="23" transform="translate(-15462.408 -17478)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">23</tspan></text>
+    <text id="_21" data-name="21" transform="translate(-15046.428 -17478)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">21</tspan></text>
+    <text id="_30-2" data-name="30" transform="translate(-15462.408 -17443)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">30</tspan></text>
+    <text id="_28" data-name="28" transform="translate(-15046.428 -17443)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">28</tspan></text>
+    <text id="_29-2" data-name="29" transform="translate(-14996.805 -17443)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">29</tspan></text>
+    <text id="_6-2" data-name="6" transform="translate(-15602.76 -17548)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">6</tspan></text>
+    <text id="_4-2" data-name="4" transform="translate(-15186.805 -17548)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">4</tspan></text>
+    <text id="_13-2" data-name="13" transform="translate(-15607.377 -17513)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">13</tspan></text>
+    <text id="_11-2" data-name="11" transform="translate(-15191.396 -17513)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">11</tspan></text>
+    <text id="_20-2" data-name="20" transform="translate(-15607.377 -17478)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">20</tspan></text>
+    <text id="_18-2" data-name="18" transform="translate(-15191.396 -17478)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">18</tspan></text>
+    <text id="_27-2" data-name="27" transform="translate(-15607.377 -17443)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">27</tspan></text>
+    <text id="_25-2" data-name="25" transform="translate(-15191.396 -17443)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">25</tspan></text>
+    <text id="_3-2" data-name="3" transform="translate(-15413.805 -17583)" fill="#b7b7b7" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">3</tspan></text>
+    <text id="_1-2" data-name="1" transform="translate(-14997.473 -17583)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">1</tspan></text>
+    <text id="_10-2" data-name="10" transform="translate(-15413.805 -17548)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">10</tspan></text>
+    <text id="_8-2" data-name="8" transform="translate(-14997.473 -17548)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">8</tspan></text>
+    <text id="_17-2" data-name="17" transform="translate(-15411.805 -17513)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">17</tspan></text>
+    <text id="_15-2" data-name="15" transform="translate(-14994.805 -17513)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">15</tspan></text>
+    <text id="_24-2" data-name="24" transform="translate(-15411.805 -17478)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">24</tspan></text>
+    <text id="_22-2" data-name="22" transform="translate(-14994.805 -17478)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">22</tspan></text>
+    <text id="_7-2" data-name="7" transform="translate(-15552.605 -17548)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">7</tspan></text>
+    <text id="_5-2" data-name="5" transform="translate(-15136.625 -17548)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">5</tspan></text>
+    <text id="_14-2" data-name="14" transform="translate(-15557.221 -17513)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">14</tspan></text>
+    <text id="_12-2" data-name="12" transform="translate(-15141.24 -17513)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">12</tspan></text>
+    <text id="_21-2" data-name="21" transform="translate(-15557.221 -17478)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">21</tspan></text>
+    <text id="_19-2" data-name="19" transform="translate(-15141.24 -17478)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">19</tspan></text>
+    <text id="_28-2" data-name="28" transform="translate(-15557.221 -17443)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">28</tspan></text>
+    <text id="_26-2" data-name="26" transform="translate(-15141.24 -17443)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">26</tspan></text>
+    <text id="Th-2" data-name="Th" transform="translate(-15095.832 -17611.5)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Th</tspan></text>
+    <text id="Fr" transform="translate(-15463.076 -17611.5)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Fr</tspan></text>
+    <text id="Fr-2" data-name="Fr" transform="translate(-15048.516 -17611.5)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Fr</tspan></text>
+    <text id="Sa" transform="translate(-15418.068 -17611.5)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Sa</tspan></text>
+    <text id="Sa-2" data-name="Sa" transform="translate(-15003.508 -17611.5)" fill="#3e2626" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Sa</tspan></text>
+    <text id="July_2023" data-name="July 2023" transform="translate(-15180.654 -17647.5)" fill="#33835c" font-size="18" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">July 2023</tspan></text>
+    <path id="Path_14695" data-name="Path 14695" d="M-16657.156-18120.762l9.428,8.17-9.428,8.17" transform="translate(1701.935 460.5)" fill="none" stroke="#33835c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37.305" height="34.631" viewBox="0 0 37.305 34.631">
+  <g id="megaphone1" transform="matrix(0.966, -0.259, 0.259, 0.966, -2.338, 8.088)">
+    <g id="Group_10" data-name="Group 10" transform="translate(0 0)">
+      <g id="Group_9" data-name="Group 9">
+        <path id="Path_6" data-name="Path 6" d="M0,3.125A3.3,3.3,0,0,0,2.141,6.25V.3c0-.086.043-.214.043-.3A3.339,3.339,0,0,0,0,3.125Z" transform="translate(0 9.032)" fill="#fff"/>
+        <path id="Path_7" data-name="Path 7" d="M5.608,0H0L2.1,7.619A2.654,2.654,0,0,0,4.666,9.589a2.7,2.7,0,0,0,2.183-1.07,2.483,2.483,0,0,0,.428-2.312Z" transform="translate(6.079 19.52)" fill="#fff"/>
+        <path id="Path_8" data-name="Path 8" d="M0,.043H.043V0C.043.043.043.043,0,.043Z" transform="translate(2.183 8.946)" fill="#fff"/>
+        <path id="Path_9" data-name="Path 9" d="M.342,0H0V7.705H.343A3.853,3.853,0,1,0,.342,0Z" transform="translate(32.533 8.39)" fill="#fff"/>
+        <path id="Path_10" data-name="Path 10" d="M0,2.654V8.732a2.911,2.911,0,0,0,2.911,2.825H10.7V0H2.911A2.783,2.783,0,0,0,0,2.654Z" transform="translate(3.425 6.678)" fill="#fff"/>
+        <path id="Path_11" data-name="Path 11" d="M0,18.407l15.838,6.335V0L0,6.335Z" transform="translate(15.411 0)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
