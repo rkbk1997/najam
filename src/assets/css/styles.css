@@ -347,7 +347,7 @@ p {
   font-size: 13px;
   color: var(--gray-dark);
 }
-.event-carousel .owl-item {
+.event-carousel .item {
   padding-left: 0px;
 }
 .event-carousel .owl-item .item::after {

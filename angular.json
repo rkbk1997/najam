@@ -120,8 +120,4 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": false
-  }
 }
