@@ -16,9 +16,9 @@
   --secondary-color: #55565a;
   --primaryFont: "DIN Next LT Arabic";
   --bg-light-green: #d6e6de;
-
   --input-border: #bebebe;
   --light-green: #b8d1c5;
+  --roboto:"Roboto", sans-serif;
 }
 
 * {
@@ -58,9 +58,13 @@
 }
 
 body {
-  font-family: var(--primaryFont);
+  font-family: var(--roboto);
   padding: 0px;
   color: var(--gray-dark);
+}
+
+[dir="rtl"] body {
+  font-family: var(--primaryFont);
 }
 
 a {
@@ -184,6 +188,10 @@ p {
 }
 .notificationIcon {
   width: 33px;
+}
+.notificationIcon span{
+  right: inherit !important;
+  left: 0 !important;
 }
 .top-75 {
   top: 75% !important;
@@ -430,15 +438,15 @@ p {
 .main-carousel h5 {
   font-size: 13px;
   color: var(--white);
-  padding-right: 20px;
-  background: url(../img/calendarwhite.svg) no-repeat center right;
+  padding-left: 20px;
+  background: url(../img/calendarwhite.svg) no-repeat center left;
   background-size: 15px auto;
 }
 .main-carousel.main-carousel .owl-nav {
   position: absolute;
   margin: 0;
   bottom: 10px;
-  left: 10px;
+  right: 10px;
   gap: 60px;
   display: flex;
 }
@@ -446,7 +454,7 @@ p {
   position: absolute;
   margin: 0;
   bottom: 27px;
-  left: 50px;
+  right: 38px;
   gap: 10px;
   display: flex;
 }
@@ -534,7 +542,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0 15px 0 15px;
+  border-radius: 15px 0 15px;
 }
 .boxHeading h2 {
   padding-top: 8px;
@@ -576,7 +584,7 @@ p {
   position: absolute;
   margin: 0;
   bottom: 10px;
-  left: 25px;
+  left: 38px;
   gap: 5px;
   display: flex;
 }
@@ -621,17 +629,16 @@ p {
 .owl-carousel.evntslide .owl-nav {
   position: absolute;
   bottom: -79px;
-  right: 0;
+  right: inherit;
   left: 0;
-  gap: 70px;
+  gap: 65px;
   display: flex;
   justify-content: center;
 }
 .owl-carousel.evntslide .owl-dots {
   position: absolute;
   bottom: -69px;
-  right: 10px;
-  left: -10px;
+  left: 40px;
   gap: 5px;
   margin: auto;
   display: flex;
@@ -672,6 +679,7 @@ p {
 .listBoxHeading img {
   max-width: 40px;
   max-height: 40px;
+  transform: scale(-1, 1);
 }
 .table-striped th {
   padding: 15px;
@@ -709,6 +717,10 @@ p {
 }
 .list-unstyled li {
   display: flex;
+}
+.list-unstyled li .ms-3{
+  margin-left: 0rem !important;
+  margin-right: 1rem !important;
 }
 .timerconainer {
   flex-direction: row-reverse;
@@ -1341,7 +1353,7 @@ a {
   height: 40px;
 }
 .evnt-slide .btn-default{
-  left: 10px;
+  right: 10px;
   bottom: 10px;
   width: 120px;
   min-width: 120px;
@@ -1403,6 +1415,7 @@ a {
 [dir="rtl"] .owl-carousel.box-carousel .owl-nav {
   right: 0px;
   left: inherit;
+  gap: 60px;
 }
 [dir="rtl"] .owl-carousel.box-carousel .owl-dots {
   right: 25px;
@@ -1420,6 +1433,15 @@ a {
 [dir="rtl"] .owl-carousel.event-carousel .owl-nav button.owl-prev:hover,
 [dir="rtl"] .owl-carousel.event-carousel .owl-nav button.owl-prev {
   transform: none;
+}
+[dir="rtl"] .main-carousel.main-carousel .owl-nav {
+  right: inherit;
+  left: 10px;
+}
+[dir="rtl"] .main-carousel.main-carousel .owl-dots {
+  right: inherit;
+  left: 49px;
+  bottom: 25px;
 }
 [dir="rtl"] .border-start {
   border-left: 0px !important;
@@ -1494,6 +1516,29 @@ a {
 [dir="rtl"] .adminservices .card .btn-primary {
   flex-direction: row;
   transform: none;
+}
+[dir="rtl"] .listBoxHeading img {
+  transform: none;
+}
+[dir="rtl"]  .boxIcon {
+  border-radius:0  15px 0 15px;
+}
+[dir="rtl"] .notificationIcon span {
+  right: -10px !important;
+  left: inherit !important;
+}
+[dir="rtl"] .main-carousel h5 {
+  padding-left: inherit;
+  padding-right: 30px;
+  background: url(../img/calendarwhite.svg) no-repeat center right;
+}
+[dir="rtl"] .evnt-slide .btn-default{
+  right: inherit;
+  left: 10px;
+}
+[dir="rtl"]  .list-unstyled li .ms-3{
+  margin-left: 1rem !important;
+  margin-right: 0rem !important;
 }
 
 /* Responsive */
