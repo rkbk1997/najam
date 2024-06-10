@@ -61,7 +61,5 @@ export class DashboardComponent implements AfterViewInit {
         })
       })
     })(jQuery);
-
   }
-
 }
