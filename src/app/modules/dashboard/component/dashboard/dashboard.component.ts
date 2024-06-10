@@ -10,21 +10,54 @@ export class DashboardComponent implements AfterViewInit {
 
 
   ngAfterViewInit() {
-    (function ($) {
-      $(document).ready(function () {
-        $('.owl-carousel').owlCarousel({
+    (function (jQuery) {
+      jQuery(document).ready(function () {
+        jQuery('.main-carousel').owlCarousel({
+          rtl: true,
           nav: true,
-          navText: ["<i class='lni-chevron-left'></i>", "<i class='lni-chevron-right'></i>"],
-          items: 3,
-          loop: true,
-          center: true,
-          margin: 0,
+          //navText: ["<i class='lni-chevron-left'></i>", "<i class='lni-chevron-right'></i>"],
+          items: 1,
+          loop: false,
+          margin: 10,
           lazyLoad: true,
-          dots: false
-        });
+          dots: true
+        })
+        jQuery('.event-carousel').owlCarousel({
+          rtl: true,
+          loop: false,
+          margin: 10,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: true
+            },
+            600: {
+              items: 2,
+              nav: false
+            },
+            1000: {
+              items: 3,
+              nav: true,
+              loop: false,
+              dots: false,
+              margin: 20
+            }
+          }
+        })
+        jQuery('.box-carousel').owlCarousel({
+          rtl: true,
+          loop: false,
+          margin: 10,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: true
+            },
+          }
+        })
       });
     })(jQuery);
-
   }
-
 }
