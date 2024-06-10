@@ -16,11 +16,11 @@
           <div class="d-flex column-gap-15 ms-3">
             <div class="systemBox d-flex align-items-center" (click)="openServicePage()">
               <img src="assets/img/dashboardboxicon.svg" class="img-fluid">
-              <div class="systemBoxLabel fw-medium">{{'Systems_administration' | translate }}</div>
+              <div class="systemBoxLabel fw-medium">{{'systems_administration' | translate }}</div>
             </div>
             <div class="systemBox d-flex align-items-center">
               <img src="assets/img/star.svg" class="img-fluid">
-              <div class="systemBoxLabel fw-medium">أنظمتي</div>
+              <div class="systemBoxLabel fw-medium">{{'my_systems' | translate}}</div>
             </div>
           </div>
           <a role="button" class="languageIcon fw-bold ms-3" (click)="changeLanguage()">{{userLanguage === 'ar' ? 'EN' : 'AR' | uppercase}}</a>
