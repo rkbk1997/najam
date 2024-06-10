@@ -8,6 +8,7 @@ import { TawasolComponent } from './component/tawasol/tawasol.component';
 import { TawasoldetailsComponent } from './component/tawasoldetails/tawasoldetails.component';
 import { EmployeeListComponent } from './component/employee-list/employee-list.component';
 import { EmployeeDetailsComponent } from './component/employee-details/employee-details.component';
+import { SharedDocComponent } from './component/shared-doc/shared-doc.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { EmployeeDetailsComponent } from './component/employee-details/employee-
     TawasolComponent,
     TawasoldetailsComponent,
     EmployeeListComponent,
-    EmployeeDetailsComponent
+    EmployeeDetailsComponent,
+    SharedDocComponent
   ],
   imports: [
     CommonModule,

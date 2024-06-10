@@ -5,6 +5,7 @@ import { TawasolComponent } from './component/tawasol/tawasol.component';
 import { TawasoldetailsComponent } from './component/tawasoldetails/tawasoldetails.component';
 import { EmployeeListComponent } from './component/employee-list/employee-list.component';
 import { EmployeeDetailsComponent } from './component/employee-details/employee-details.component';
+import { SharedDocComponent } from './component/shared-doc/shared-doc.component';
 
 const routes: Routes = [
   { path: '', component: DashboardComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'tawasoldetails', component: TawasoldetailsComponent },
   { path: 'employee-list', component: EmployeeListComponent },
   { path: 'employee-details', component: EmployeeDetailsComponent },
+  { path: 'shared-docs', component: SharedDocComponent }
 ];
 
 @NgModule({

@@ -13,5 +13,9 @@
   "order_number": "Order number",
   "order_status": "Order status",
   "madar_requests": "Madar requests",
-  "tor_system_requests": "Tor system requests"
+  "tor_system_requests": "Tor system requests",
+  "document_library": "Document library",
+  "go_to_a_managed_system": "Go to a managed system",
+  "technical_support_platform": "Technical support platform",
+  "create_a_new_mode_request": "Create a new mode request"
 }

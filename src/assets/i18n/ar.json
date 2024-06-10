@@ -13,5 +13,9 @@
   "order_number": "رقم الطلب",
   "order_status": "حالة الطلب",
   "madar_requests": "طلبات مدار",
-  "tor_system_requests": "طلبات نظام طور"
+  "tor_system_requests": "طلبات نظام طور",
+  "document_library": "مكتبة المستندات",
+  "go_to_a_managed_system": "الذهاب الى نظام مدار",
+  "technical_support_platform": "منصة الدعم الفني",
+  "create_a_new_mode_request": "إنشاء طلب طور جديد "
 }
