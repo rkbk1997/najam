@@ -20,10 +20,10 @@
 
     <div class="row my-3">
 
-      <div class="col-12 col-lg-4"> 
+      <div class="col-12 col-lg-4">
         <div class="row">
-          <div class="col-12 main-carouselHeight"> 
-            <div class="owl-carousel owl-theme main-carousel">            
+          <div class="col-12 main-carouselHeight">
+            <div class="owl-carousel owl-theme main-carousel">
               <div class="item" *ngFor="let item of [1,2,3]">
                 <div class="carouselImage">
                   <img src="assets/img/event.png" alt="" class="img-fluid" />
@@ -40,8 +40,8 @@
               عرض جميع الأخبار
             </a>
           </div>
-        </div>         
-        
+        </div>
+
       </div>
 
       <div class="col-12 col-lg-4">
@@ -100,26 +100,27 @@
             <div class="boxIcon bg-green me-3">
               <img src="assets/img/certificate.svg" alt="" class="img-fluid" />
             </div>
-            <h2 class="fs-20 fw-bold text-green">تـــــــواصــــــل</h2>
-          </div> 
+            <h2 class="fs-20 fw-bold text-green">{{'communicate' | translate}}</h2>
+          </div>
           <div class="boxContent evnt-slide">
             <div class="owl-carousel owl-theme box-carousel evntslide">
               <div class="item" *ngFor="let item of [1,2,3]">
                 <p class="fw-bold fs-20 text-green mb-1">أشكال الاحتيال الداخلي</p>
-                <p class="fs-17 m-0 p-0">                      
-                  <span class="me-1 text-brown"><img src="assets/img/calendarbrown.svg" alt="" class="img-fluid"></span>20-05-2023 
+                <p class="fs-17 m-0 p-0">
+                  <span class="me-1 text-brown"><img src="assets/img/calendarbrown.svg" alt=""
+                      class="img-fluid"></span>20-05-2023
                 </p>
                 <div class="mt-1 mx-auto d-flex align-items-center justify-content-center">
                   <img src="assets/img/image003.png" alt="" class="img-fluid evntslide">
                 </div>
-              </div>               
+              </div>
             </div>
-            <a href="#" class="btn btn-default bg-brown ms-auto fs-15 fw-bold position-absolute">
+            <a routerLink="/main/dashboard/tawasol" class="btn btn-default bg-brown ms-auto fs-15 fw-bold position-absolute">
               عرض الجميع
             </a>
-          </div>               
+          </div>
+        </div>
       </div>
-    </div>
 
     </div>
 
@@ -411,25 +412,11 @@
               </div>
               <h2 class="fs-20 fw-bold mb-0">نجومنا الجدد</h2>
             </div>
-            <a href="" class="btn btn-green">عرض الكل</a>
+            <a routerLink="/main/dashboard/employee-list" class="btn btn-green">عرض الكل</a>
           </div>
           <div class="boxContent bg-white shadow-none">
             <ul class="list-unstyled mt-4">
-              <li class="media align-items-center mb-3">
-                <div class="shadow rounded-2 ms-3"><img src="/assets/img/profile.png" class="img-fluid p-0"></div>
-                <div class="media-body">
-                  <h5 class="fs-15 mt-0 mb-1">محمد خالد احمد الغانم</h5>
-                  <p class="fs-13 fw-light mb-0">.NET Developer</p>
-                </div>
-              </li>
-              <li class="media align-items-center mb-3">
-                <div class="shadow rounded-2 ms-3"><img src="/assets/img/profile.png" class="img-fluid p-0"></div>
-                <div class="media-body">
-                  <h5 class="fs-15 mt-0 mb-1">محمد خالد احمد الغانم</h5>
-                  <p class="fs-13 fw-light mb-0">.NET Developer</p>
-                </div>
-              </li>
-              <li class="media align-items-center mb-3">
+              <li class="media align-items-center mb-3" routerLink="/main/dashboard/employee-details" *ngFor="let item of [1,2,3,4]">
                 <div class="shadow rounded-2 ms-3"><img src="/assets/img/profile.png" class="img-fluid p-0"></div>
                 <div class="media-body">
                   <h5 class="fs-15 mt-0 mb-1">محمد خالد احمد الغانم</h5>

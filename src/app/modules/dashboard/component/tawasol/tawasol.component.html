@@ -1,0 +1,62 @@
+<main class="midsection">
+  <div class="innerheader">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>تواصل</h2>
+          <h4>
+            <img src="assets/img/calendargreen.svg" alt="">
+            <span>20-05-2023</span>
+          </h4>
+          <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
+              <li class="breadcrumb-item active" aria-current="page">تواصل</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="newscards">
+    <div class="container">
+      <form class="row gx-4 mb-5 mt-2 mt-md-0">
+        <div class="col-12 col-md-auto mt-2 mt-md-0">
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ابحث هنا">
+        </div>
+        <div class="col-12 col-md-auto mt-2 mt-md-0">
+          <input type="date" class="form-control" id="exampleFormControlInput2" placeholder="تاريخ الخبر">
+        </div>
+        <div class="col-12 col-md-auto mt-2 mt-md-0">
+          <button type="submit" class="btn btn-primary full  px-5 h-100">بحث </button>
+        </div>
+      </form>
+      <div class="row gx-5">
+        <div class="col-12 col-md-4 mt-4 mt-md-0" *ngFor="let item of [1,2,3]">
+          <div class="card p-4 pb-3">
+
+            <div class="card-image ">
+              <img src="assets/img/tawasol.png" class="card-img-top img-fluid" alt="...">
+            </div>
+
+            <div class="card-body">
+              <a href="#" class="card-title">التقيد بإبراز بطاقة العمل</a>
+              <div class="d-flex justify-content-between align-items-start">
+
+                <h6 class="fw-normal">
+                  <img src="assets/img/calendargreen.svg" alt="" class="img-fluid">
+                  <span>20-05-2023</span>
+                </h6>
+
+                <a routerLink="/main/dashboard/tawasoldetails" class="card-button btn-primary ">
+                  <img src="assets/img/leftwhitearrow.svg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
