@@ -10,19 +10,9 @@ export class DashboardComponent implements AfterViewInit {
 
 
   ngAfterViewInit() {
-    (function (jQuery) {
-      jQuery(document).ready(function () {
-        jQuery('.main-carousel').owlCarousel({
-          rtl: true,
-          nav: true,
-          //navText: ["<i class='lni-chevron-left'></i>", "<i class='lni-chevron-right'></i>"],
-          items: 1,
-          loop: false,
-          margin: 10,
-          lazyLoad: true,
-          dots: true
-        })
-        jQuery('.event-carousel').owlCarousel({
+    (function ($) {
+      $(document).ready(function () {
+        $('.event-carousel').owlCarousel({
           rtl: true,
           loop: false,
           margin: 10,
@@ -45,7 +35,7 @@ export class DashboardComponent implements AfterViewInit {
             }
           }
         })
-        jQuery('.box-carousel').owlCarousel({
+        $('.main-carousel').owlCarousel({
           rtl: true,
           loop: false,
           margin: 10,
@@ -57,7 +47,19 @@ export class DashboardComponent implements AfterViewInit {
             },
           }
         })
-      });
+        $('.box-carousel').owlCarousel({
+          rtl: true,
+          loop: false,
+          margin: 10,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: true
+            },
+          }
+        })
+      })
     })(jQuery);
   }
 }

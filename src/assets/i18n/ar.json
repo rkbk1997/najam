@@ -1,4 +1,7 @@
 {
   "main": "الرئيسية",
-  "Systems_administration": "إدارة الأنظمة"
+  "systems_administration": "إدارة الأنظمة",
+  "my_systems": "أنظمتي",
+  "new_alerts": "تنبيهات جديدة",
+  "general_advertisements":"إعلانات عامة"
 }

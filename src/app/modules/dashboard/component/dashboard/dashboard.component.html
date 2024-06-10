@@ -6,22 +6,10 @@
           <div class="headingIcon rounded-circle bg-orange d-flex align-items-center justify-content-center">
             <img src="/assets/img/megaphone.svg" alt="" class="img-fluid" />
           </div>
-          <h2>إعلانات عامة</h2>
+          <h2>{{'general_advertisements' | translate }}</h2>
         </div>
         <div class="owl-carousel owl-theme event-carousel">
-          <div class="item">
-            <h4>نود احاطتكم بأنه سيكون هناك اعمال صيانة لتحسين الأنظمة و الخدمات</h4>
-            <h5>منذ 30 دقيقة</h5>
-          </div>
-          <div class="item">
-            <h4>نود احاطتكم بأنه سيكون هناك اعمال صيانة لتحسين الأنظمة و الخدمات</h4>
-            <h5>منذ 30 دقيقة</h5>
-          </div>
-          <div class="item">
-            <h4>نود احاطتكم بأنه سيكون هناك اعمال صيانة لتحسين الأنظمة و الخدمات</h4>
-            <h5>منذ 30 دقيقة</h5>
-          </div>
-          <div class="item">
+          <div class="item" *ngFor="let item of [1,2,3,4]">
             <h4>نود احاطتكم بأنه سيكون هناك اعمال صيانة لتحسين الأنظمة و الخدمات</h4>
             <h5>منذ 30 دقيقة</h5>
           </div>
@@ -30,27 +18,10 @@
     </div>
 
     <div class="row my-3">
+
       <div class="col-12 col-lg-4">
         <div class="owl-carousel owl-theme main-carousel">            
-          <div class="item">
-            <div class="carouselImage">
-              <img src="/assets/img/event.png" alt="" class="img-fluid" />
-            </div>
-            <div class="carouselContent">
-              <h4>بفعاليات متنوعة وعروض شيقة نجم تحتفل بالذكرى الـ 92 لليوم الوطني</h4>
-              <h5>منذ 30 دقيقة</h5>
-            </div>
-          </div>
-          <div class="item">
-            <div class="carouselImage">
-              <img src="/assets/img/event.png" alt="" class="img-fluid" />
-            </div>
-            <div class="carouselContent">
-              <h4>بفعاليات متنوعة وعروض شيقة نجم تحتفل بالذكرى الـ 92 لليوم الوطني</h4>
-              <h5>منذ 30 دقيقة</h5>
-            </div>
-          </div>
-          <div class="item">
+          <div class="item" *ngFor="let item of [1,2,3,4]">
             <div class="carouselImage">
               <img src="/assets/img/event.png" alt="" class="img-fluid" />
             </div>
@@ -61,6 +32,7 @@
           </div>
         </div>
       </div>
+      
       <div class="col-12 col-lg-4">
         <div class="row mt-4 mt-lg-0">
           <div class="col-sm-12">

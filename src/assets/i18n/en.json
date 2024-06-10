@@ -1,4 +1,7 @@
 {
   "main": "Main",
-  "Systems_administration": "Systems administration"
+  "systems_administration": "Systems administration",
+  "my_systems": "My systems",
+  "new_alerts": "New alerts",
+  "general_advertisements":"General advertisements"
 }

@@ -7,7 +7,8 @@ const routes: Routes = [
   {path: 'main', component: MainComponent, 
   children: [
     { path: '', loadChildren: () => import('./modules/dashboard/dashboard.module').then(m => m.DashboardModule) },
-    { path: 'admin', loadChildren: () => import('./modules/admin/admin-routing.module').then(m => m.AdminRoutingModule) }
+    { path: 'admin', loadChildren: () => import('./modules/admin/admin.module').then(m => m.AdminModule) },
+    { path: 'news', loadChildren: () => import('./modules/news/news.module').then(m => m.NewsModule) }
   ]
   }
 ];
