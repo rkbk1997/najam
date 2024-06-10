@@ -395,6 +395,7 @@ p {
 .main-carousel .item {
   border-radius: 20px;
   overflow: hidden;
+  max-height: 250px;
 }
 .main-carousel .item .carouselContent {
   background-color: rgba(0, 0, 0, 0.5);
@@ -531,7 +532,7 @@ p {
   color: var(--white);
   line-height: 16px;
   border-radius: 8px;
-  padding: 0px 20px 4px;
+  padding: 2px 20px 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -542,6 +543,9 @@ p {
 .btn.btn-default:hover {
   color: var(--white);
   outline: none;
+}
+.btn.btn-default.bg-brown:hover{
+  background-color: #55565A;
 }
 .btn.btn-default svg {
   transform: scale(-1, -1);
@@ -1315,6 +1319,20 @@ a {
 .inputfocus.active table {
   display: table;
 }
+.main-carouselHeight{
+  height: 250px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.bottomButton{
+  height: 40px;
+}
+.evnt-slide .btn-default{
+  left: 10px;
+  bottom: 10px;
+  width: 120px;
+  min-width: 120px;
+}
 
 @media screen and (max-width: 1199px) {
   .systemBoxLabel{
@@ -1336,6 +1354,9 @@ a {
     margin-right: 0rem !important;
     margin-left: 0rem !important;
   }
+  .header {
+    padding: 15px 15px 0 15px;
+}
   .innerheader {
     padding: 10px 0 30px;
   }
@@ -1406,36 +1427,38 @@ a {
   .footerLinks li{
     text-align: right;
   }
-  .footer .snapChat {
-    display: flex;
- 
-    justify-content: end;
-    margin-top: 15px;
-    text-align: right !important;
-}
-.custompadding {
-  padding: 0 15px;
-}
-  .innerheader{
-    margin:15px 15px;
+  .custompadding {
+    padding: 0 15px;
   }
-  .newscards .card{margin-bottom: 15px;}
-  .shareddocs .card-list ul {
-    border-top: 1px solid #dfdfdf;
-    border-right: none;
-    margin-top: 15px !important;
-}
-.tablearea .table th{
-  min-width: 150px;
-}
-.adminservices .card{    padding: 20px 20px;}
+    .innerheader{
+      margin:15px 15px;
+    }
 
-.empcards .empcard .card-image {
-  width: 60px;
-  height: 60px;
+    .footer .snapChat {
+      display: flex;
+   
+      justify-content: end;
+      margin-top: 15px;
+      text-align: right !important;
+  }
+    .newscards .card{margin-bottom: 15px;}
+    .shareddocs .card-list ul {
+      border-top: 1px solid #dfdfdf;
+      border-right: none;
+      margin-top: 15px !important;
+  }
+  .tablearea .table th{
+    min-width: 150px;
+  }
+  .adminservices .card{    padding: 20px 20px;}
   
-  flex: 0 0 60px;
-}
+
+  .empcards .empcard .card-image {
+    width: 60px;
+    height: 60px;
+ 
+    flex: 0 0 60px;
+  }
 }
 
 @media screen and (max-width: 414px) {
@@ -1446,7 +1469,6 @@ a {
   .toptab .nav-tabs .nav-item {
     margin: 0 -6px;
   }  
-
 }
 
 

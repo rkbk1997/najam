@@ -3,5 +3,15 @@
   "systems_administration": "Systems administration",
   "my_systems": "My systems",
   "new_alerts": "New alerts",
-  "general_advertisements":"General advertisements"
+  "general_advertisements":"General advertisements",
+  "academic_star": "Academic star",
+  "go_to_the_najm_academy_platform": "Go to the Najm Academy platform",
+  "daily_media_report": "Daily media report",
+  "view_all": "View all",
+  "communicate": "Communicate",
+  "technical_support_requests": "Technical support requests",
+  "order_number": "Order number",
+  "order_status": "Order status",
+  "madar_requests": "Madar requests",
+  "tor_system_requests": "Tor system requests"
 }
