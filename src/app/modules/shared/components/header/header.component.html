@@ -38,8 +38,13 @@
                   <img src="assets/img/profile.svg" alt="" />
                 </div>
                 <a class="dropdown-toggle cursor-pointer" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                  aria-expanded="false"></a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  aria-expanded="false" (click)="toggleMenu()"></a>
+                <ul 
+                  class="dropdown-menu" 
+                  aria-labelledby="dropdownMenuButton1" 
+                  (click)="toggleMenu()"  
+                  [ngClass]="isShowMenu ? 'show' : ''"
+                >
                   <li><button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                       aria-label="Close"></button></li>
                   <li class="p-3">

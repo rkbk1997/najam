@@ -40,4 +40,8 @@ export class HeaderComponent implements OnInit {
     this.translateService.use(this.userLanguage);
   }
 
+  isShowMenu = false;  
+  toggleMenu() {
+    return this.isShowMenu = !this.isShowMenu;
+    }
 }
