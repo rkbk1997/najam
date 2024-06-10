@@ -43,5 +43,5 @@ export class HeaderComponent implements OnInit {
   isShowMenu = false;  
   toggleMenu() {
     return this.isShowMenu = !this.isShowMenu;
-    }
+  }
 }
