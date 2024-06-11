@@ -33,6 +33,8 @@ export class HeaderComponent implements OnInit {
   changeLanguage() {
     const changedLanguage = this.userLanguage === 'ar' ? 'en' : 'ar';
     this.languageSevice.languageSubject$.next(changedLanguage);
+    localStorage.setItem('lang', changedLanguage);
+    window.location.reload();
     this.switchLanguage();
   }
 

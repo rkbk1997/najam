@@ -10,9 +10,9 @@
           <h2>{{'general_advertisements' | translate }}</h2>
         </div>
         <div class="owl-carousel owl-theme event-carousel">
-          <div class="item" *ngFor="let item of [1,2,3,4]">
-            <h4>نود احاطتكم بأنه سيكون هناك اعمال صيانة لتحسين الأنظمة و الخدمات</h4>
-            <h5>منذ 30 دقيقة</h5>
+          <div class="item" *ngFor="let item of announcements">
+            <h4>{{item.properties.pageTitle}}</h4>
+            <h5>{{item.properties.announcementDate | date : 'dd-MM-YYYY'}}</h5>
           </div>
         </div>
       </div>
@@ -24,20 +24,20 @@
         <div class="row">
           <div class="col-12 main-carouselHeight">
             <div class="owl-carousel owl-theme main-carousel">
-              <div class="item" *ngFor="let item of [1,2,3]">
+              <div class="item" *ngFor="let item of najamNews">
                 <div class="carouselImage">
-                  <img src="assets/img/event.png" alt="" class="img-fluid" />
+                  <img [src]="getImageUrl(item.properties.mainPictures[0].url)" alt="" class="img-fluid" />
                 </div>
                 <div class="carouselContent">
-                  <h4>بفعاليات متنوعة وعروض شيقة نجم تحتفل بالذكرى الـ 92 لليوم الوطني</h4>
-                  <h5>منذ 30 دقيقة</h5>
+                  <h4>{{item.properties.pageTitle}}</h4>
+                  <h5>{{item.properties.articleDate | date : 'dd-MM-YYYY'}}</h5>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-12 bottomButton">
             <a href="#" class="btn btn-default w-100 p-2 bg-green mx-auto fs-15 fw-bold">
-              عرض جميع الأخبار
+              {{'view_all_news' | translate }}
             </a>
           </div>
         </div>
@@ -55,8 +55,7 @@
                 <h2 class="fs-20 fw-bold text-blue">{{'academic_star' | translate }}</h2>
               </div>
               <div class="boxContent">
-                <p class="fs-17 pb-1 mb-0">تعرف على جميع الدورات التدريبية على منصة نجم أكاديمي و التي تحتوي على مجموعة
-                  كبيره من الدورات العلمية لجميع التخصصات</p>
+                <p class="fs-17 pb-1 mb-0" *ngFor="let item of stars" [innerHTML]="item.properties.bodyContent.markup"></p>
                 <a href="#" class="btn btn-default bg-blue mx-auto fs-15 fw-bold mx-auto">
                   {{ 'go_to_the_najm_academy_platform' | translate }}
                 </a>
@@ -75,14 +74,14 @@
               </div>
               <div class="boxContent">
                 <div class="owl-carousel owl-theme box-carousel">
-                  <div class="item" *ngFor="let item of [1,2,3]">
+                  <div class="item" *ngFor="let item of mediaReport">
                     <p class="fs-17 m-0 p-0">
                       <span class="fw-bold fs-20 text-black"> اليومي</span>
                       <span class="me-1"><img src="/assets/img/calendarbrown.svg" alt=""
-                          class="img-fluid"></span>20-05-2023
+                          class="img-fluid"></span>
+                      {{item.createDate | date : 'dd-MM-YYYY'}}
                     </p>
-                    <p class="fs-17 pb-1 mb-0">مدير عام المرور يؤكد الجاهزية لتنفيذ الخطة المرورية المتزامنة مع عودة
-                      الدراسة</p>
+                    <p class="fs-17 pb-1 mb-0" [innerHTML]="item.properties.bodyContent.markup" ></p>
                     <a href="#" class="btn btn-default bg-purple ms-auto fs-15 fw-bold">
                       {{ "view_all" | translate}}
                     </a>
@@ -189,7 +188,7 @@
       </div>
     </div>
 
-    <div class="row my-4 my-md-5">
+    <!-- <div class="row my-4 my-md-5">
       <div class="col-12 col-lg-4 mt-4 mt-lg-0">
         <div class="roundBox bg-white border border-dark shadow-lg">
           <div class="listBoxHeading bg-brown d-flex align-items-center justify-content-between p-3">
@@ -355,7 +354,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="row my-4 my-md-5">
       <div class="col-12 col-lg-4 mt-4 mt-lg-0">
