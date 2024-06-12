@@ -3,16 +3,16 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2>بفعاليات متنوعة وعروض شيقة نجم تحتفل بالذكرى الـ 92 لليوم الوطني</h2>
+          <h2 [innerHTML]="tawasolDetails?.properties?.bodyContent?.markup"></h2>
           <h4>
             <img src="assets/img/calendargreen.svg" alt="">
-            <span>20-05-2023</span>
+            <span>{{tawasolDetails?.properties?.tawasolDate}}</span>
           </h4>
           <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
-              <li class="breadcrumb-item"><a href="#">الأخبار</a></li>
-              <li class="breadcrumb-item active" aria-current="page">بفعاليات متنوعة وعروض شيقة نجم تحتفل بالذكرى الـ 92 لليوم الوطني</li>
+              <li class="breadcrumb-item"><a routerLink="/main/dashboard">{{'main' | translate}}</a></li>
+              <li class="breadcrumb-item"><a routerLink="/main/dashboard/tawasol">{{'communication' | translate }}</a></li>
+              <li class="breadcrumb-item active" aria-current="page" [innerHTML]="tawasolDetails?.properties?.bodyContent?.markup"></li>
             </ol>
           </nav>
         </div>
@@ -25,7 +25,7 @@
          <div class="row gx-4 justify-content-center">
             <div class="col-12 col-lg-6">
                 <div class="innnerimage">
-                    <img src="assets/img/tawasol.png" class="d-block w-100" alt="...">
+                    <img [src]="getImageUrl(tawasolDetails?.properties?.mainPictures[0].url)" class="d-block w-100" alt="...">
                 </div>
             </div>
          </div>
