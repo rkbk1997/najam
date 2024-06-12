@@ -1480,7 +1480,7 @@ a {
   flex-direction: row;
 }
 [dir="rtl"] .form-check-inline {
-  margin-right: 2rem;
+  margin-right: 1.5rem;
   margin-left: 0;
 }
 [dir="rtl"] .form-check .form-check-input {
@@ -1669,34 +1669,39 @@ a {
   .custompadding {
     padding: 0 15px;
   }
-    .innerheader{
-      margin:15px 15px;
-    }
-
-    .footer .snapChat {
-      display: flex;
-   
-      justify-content: end;
-      margin-top: 15px;
-      text-align: right !important;
+  .innerheader{
+    margin:15px 15px;
   }
-    .newscards .card{margin-bottom: 15px;}
-    .shareddocs .card-list ul {
-      border-top: 1px solid #dfdfdf;
-      border-right: none;
-      margin-top: 15px !important;
+
+  .footer .snapChat {
+  display: flex;
+
+  justify-content: end;
+  margin-top: 15px;
+  text-align: right !important;
+}
+.newscards .card{margin-bottom: 15px;}
+.shareddocs .card-list ul {
+  border-top: 1px solid #dfdfdf;
+  border-right: none;
+  margin-top: 15px !important;
   }
   .tablearea .table th{
     min-width: 150px;
   }
-  .adminservices .card{    padding: 20px 20px;}
-  
-
+  .adminservices .card{    
+    padding: 20px 20px;
+  }
   .empcards .empcard .card-image {
     width: 60px;
     height: 60px;
- 
     flex: 0 0 60px;
+  }
+  .event-carousel{
+    margin-top: 50px;
+  }
+  .main-carouselHeight .main-carousel .item {
+    max-height: 210px;
   }
 }
 
