@@ -33,4 +33,9 @@ export class DashboardService {
   getImageUrl(url: string) {
     return this.baseUrl + url
   }
+
+  getRecoardById(id: string, lang:string) {
+    const url = this.baseUrl + api.contentURLBYID + id + `?fetch=descendants${(`:/${lang}/`)}&fields=properties${decodeURIComponent(`[$all]`)}`;
+    return this.httpService.getRcoards((url));
+  }
 }

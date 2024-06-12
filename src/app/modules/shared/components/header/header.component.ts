@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { LangService } from '../../../../services/lang/lang.service';
 import { TranslateService } from '@ngx-translate/core';
+import { DashboardService } from '../../../../services/dashboard/dashboard.service';
+import { alias } from '../../../../constant/alias';
 
 @Component({
   selector: 'app-header',
@@ -11,14 +13,17 @@ import { TranslateService } from '@ngx-translate/core';
 export class HeaderComponent implements OnInit {
 
   userLanguage!: string;
+  isShowMenu = false;  
+  systemLinks: any = [];
 
-  constructor(private router: Router, private languageSevice: LangService, private translateService: TranslateService) { }
+  constructor(private dashboard: DashboardService ,private router: Router, private languageSevice: LangService, private translateService: TranslateService) { }
 
   ngOnInit(): void {
     this.languageSevice.languageSubject$.subscribe((res) => {
       this.userLanguage = res;
       this.setUIDirection();
     });
+    this.getSystemExternalLinks();
   };
 
   setUIDirection() {
@@ -42,8 +47,14 @@ export class HeaderComponent implements OnInit {
     this.translateService.use(this.userLanguage);
   }
 
-  isShowMenu = false;  
   toggleMenu() {
     return this.isShowMenu = !this.isShowMenu;
+  }
+
+  getSystemExternalLinks() {
+    this.dashboard.getRcoards(this.userLanguage, alias.FRONTPAGE, 0, 10).subscribe((res: any)=> {
+      console.log(`🚀 ~ HeaderComponent ~ this.dashboard.getRcoards ~ res:`, res)
+      
+    });
   }
 }
