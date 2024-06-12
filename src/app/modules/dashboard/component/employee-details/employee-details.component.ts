@@ -10,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class EmployeeDetailsComponent {
   appLang!: string;
-  newsDetails: any = {};
+  employeeDetails: any = {};
 
   /**
    * constructor
@@ -38,7 +38,7 @@ export class EmployeeDetailsComponent {
 
   getEmployeeDetails(id: any) {
     this.dashboardService.getRecoardById(id, this.appLang).subscribe((res:any) => {
-      this.newsDetails = res;
+      this.employeeDetails = res;
       
     })
   }
