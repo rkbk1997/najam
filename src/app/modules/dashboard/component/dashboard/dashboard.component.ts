@@ -2,6 +2,7 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { DashboardService } from '../../../../services/dashboard/dashboard.service';
 import { LangService } from '../../../../services/lang/lang.service';
 import { alias } from '../../../../constant/alias';
+import { Router } from '@angular/router';
 declare var jQuery: any;
 
 @Component({
@@ -24,7 +25,7 @@ export class DashboardComponent implements OnInit {
    * @param dashboardService 
    * @param LanguageService 
    */
-  constructor(private dashboardService: DashboardService, private LanguageService: LangService) { }
+  constructor(private dashboardService: DashboardService, private LanguageService: LangService,private router:Router) { }
 
   /**
    * ngOnInit Life cycle hook
@@ -180,4 +181,8 @@ export class DashboardComponent implements OnInit {
       })
     })(jQuery);
   }
+
+  navigateToDetailsPage(item:any,pageName:any) {
+    this.router.navigate([`/main/dashboard/${pageName}`], {queryParams: {id: item.id}});
+  } 
 }

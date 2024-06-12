@@ -38,12 +38,12 @@
                 <img [src]="getImageUrl(item.properties.picture[0].url)"  class="card-img-top img-fluid" alt="...">
               </div>
               <div class="card-body">
-                <a href="#" class="card-title" [innerHTML]="item.name" ></a>
+                <a href="#" class="card-title" [innerHTML]="item?.properties?.pageTitle" ></a>
                 <p class="card-dec ">{{item?.properties?.position}}</p>
                 <p class="card-dec ">{{item?.properties?.department}}</p>
                 <h6 class="fw-normal d-flex align-items-center">
                   <img src="assets/img/calendargreen.svg" alt="" class="img-fluid">
-                  <span class="px-2"> {{'joining_date' | translate }}&nbsp; {{item.properties.joinDate | date: 'dd-MM-YYYY'}}</span>
+                  <span class="px-2"> {{'joining_date' | translate }}&nbsp; {{item?.properties?.joinDate | date: 'dd-MM-YYYY'}}</span>
                 </h6>
               </div>
             </div>
