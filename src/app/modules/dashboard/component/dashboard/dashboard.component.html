@@ -383,10 +383,12 @@
           </div>
           <div class="boxContent bg-white shadow-none">
             <ul class="list-group list-unstyled mt-4">
-              <li class="mb-3"><span class="ms-3 d-inline-flex lh-1"><img src="/assets/img/word.svg" alt=""
-                    class="img-fluid"></span>يلعب نجم دورًا رئيسيًا في تطوير التأمين يلعب نجم دورًا رئيسيًا في تطوير
-                التأمين</li>
-              <li class="mb-3"><span class="ms-3 d-inline-flex lh-1"><img src="/assets/img/pdf.svg" alt=""
+              <li class="mb-3" *ngFor="let item of documents">
+                <span class="ms-3 d-inline-flex lh-1">
+                  <img src="/assets/img/{{item?.properties?.documentType?.toLowerCase()}}.svg" alt="" class="img-fluid">
+                </span>{{item.properties.pageTitle}}
+              </li>
+              <!-- <li class="mb-3"><span class="ms-3 d-inline-flex lh-1"><img src="/assets/img/pdf.svg" alt=""
                     class="img-fluid"></span>يلعب نجم دورًا رئيسيًا في تطوير التأمين يلعب نجم دورًا رئيسيًا في تطوير
                 التأمين</li>
               <li class="mb-3"><span class="ms-3 d-inline-flex lh-1"><img src="/assets/img/picture.svg" alt=""
@@ -397,7 +399,7 @@
                 التأمين</li>
               <li class="mb-0"><span class="ms-3 d-inline-flex lh-1"><img src="/assets/img/pdf.svg" alt=""
                     class="img-fluid"></span>يلعب نجم دورًا رئيسيًا في تطوير التأمين يلعب نجم دورًا رئيسيًا في تطوير
-                التأمين</li>
+                التأمين</li> -->
             </ul>
           </div>
         </div>

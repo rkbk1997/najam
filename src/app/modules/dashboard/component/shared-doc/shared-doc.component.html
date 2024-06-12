@@ -10,7 +10,7 @@
           </h4>
           <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
+              <li class="breadcrumb-item"><a href="#">{{'main' | translate}}</a></li>
               <li class="breadcrumb-item active" aria-current="page">مكتبة المستندات</li>
             </ol>
           </nav>
@@ -40,7 +40,46 @@
           <button type="submit" class="btn btn-primary  full px-5 h-100">بحث </button>
         </div>
       </form>
-      <div class="card-list">
+      <div class="card-list" *ngFor="let item of docList">
+        <div class="row align-items-center gx-5">
+          <div class="col-md-5">
+            <div class="row g-0">
+              <div class="col-md-3 text-center">
+                <div class="rightimg">
+                  <img src="assets/img/{{item.properties?.documentType?.toLowerCase()}}.svg" class="img-fluid rounded-start" alt="...">
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+
+                  <p class="card-text" [innerHTML]="item.properties.bodyContent.markup"></p>
+                  <a href="#" class="btn btn-primary d-inline-flex align-items-center">
+                    <img src="assets/img/download.svg" alt="">
+                    <span class="px-2">{{'download_the_document' | translate }}</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <ul class="list-unstyled p-0 m-0 px-5 py-4">
+              <li>
+                <span>{{'date_created' | translate }}</span>
+                <strong>{{item.createDate | date: 'dd-MM-YYYY'}}</strong>
+              </li>
+              <li>
+                <span>{{'created_by' | translate }}</span>
+                <strong>N.A</strong>
+              </li>
+              <li>
+                <span> {{'modification_date' | translate }}</span>
+                <strong>{{item.updateDate | date: 'dd-MM-YYYY'}}</strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="card-list">
         <div class="row align-items-center gx-5">
           <div class="col-md-5">
             <div class="row g-0">
@@ -79,47 +118,7 @@
             </ul>
           </div>
         </div>
-      </div>
-      <div class="card-list">
-        <div class="row align-items-center gx-5">
-          <div class="col-md-5">
-            <div class="row g-0">
-              <div class="col-md-3 text-center">
-                <div class="rightimg">
-                  <img src="assets/img/pdf.svg" class="img-fluid rounded-start" alt="...">
-                </div>
-              </div>
-              <div class="col-md-9">
-                <div class="card-body">
-
-                  <p class="card-text">يلعب نجم دورًا رئيسيًا في تطوير التأمين يلعب نجم دورًا
-                    رئيسيًا في تطوير التأمين</p>
-                  <a href="#" class="btn btn-primary d-inline-flex align-items-center">
-                    <img src="assets/img/download.svg" alt="">
-                    <span class="px-2">تنزيل المستند</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-7">
-            <ul class="list-unstyled p-0 m-0 px-5 py-4">
-              <li>
-                <span>تاريخ الانشاء</span>
-                <strong>21/05/2023</strong>
-              </li>
-              <li>
-                <span>إنشاء بواسطة</span>
-                <strong>إدارة التسويق و الاتصال المؤسسي</strong>
-              </li>
-              <li>
-                <span>تاريخ التعديل </span>
-                <strong>21/05/2023</strong>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </main>

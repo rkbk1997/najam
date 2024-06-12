@@ -18,6 +18,7 @@ export class DashboardComponent implements OnInit {
   mediaReport: any[] = [];
   tawasols: any[] = [];
   systemLinks: any;
+  documents: any = [];
 
   /**
    * constructor
@@ -46,6 +47,7 @@ export class DashboardComponent implements OnInit {
     this.getMediaReport();
     this.getTawasols();
     this.getSystemExternalLinks();
+    this.getDocuments();
   }
 
   /**
@@ -121,6 +123,14 @@ export class DashboardComponent implements OnInit {
         this.systemLinks = [];
       }
     });
+  }
+
+  getDocuments() {
+    this.dashboardService.getRcoards(this.appLang, alias.DOCUMENT, 0, 10).subscribe((res: any) => {
+      console.log(`🚀 ~ DashboardComponent ~ this.dashboardService.getRcoards ~ res:`, res)
+      this.documents = res.items;
+      
+    })
   }
 
   /**
