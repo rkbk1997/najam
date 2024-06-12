@@ -4,6 +4,7 @@ import { LangService } from '../../../../services/lang/lang.service';
 import { TranslateService } from '@ngx-translate/core';
 import { DashboardService } from '../../../../services/dashboard/dashboard.service';
 import { alias } from '../../../../constant/alias';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -15,6 +16,8 @@ export class HeaderComponent implements OnInit {
   userLanguage!: string;
   isShowMenu = false;  
   systemLinks: any = [];
+  dupSystemLink: any = [];
+  searchSubject = new Subject();
 
   constructor(private dashboard: DashboardService ,private router: Router, private languageSevice: LangService, private translateService: TranslateService) { }
 
@@ -24,7 +27,15 @@ export class HeaderComponent implements OnInit {
       this.setUIDirection();
     });
     this.getSystemExternalLinks();
+
+    this.searchSubject.subscribe((txt) => {
+
+    });
   };
+
+
+  searchLink() {
+  }
 
   setUIDirection() {
     const element = document.getElementsByTagName('html')[0];
@@ -57,9 +68,9 @@ export class HeaderComponent implements OnInit {
 
   getSystemExternalLinks() {
     this.dashboard.getSystemLink(this.userLanguage, alias.FRONTPAGE).subscribe((res: any)=> {
-      console.log(`🚀 ~ HeaderComponent ~ this.dashboard.getSystemLink ~ res:`, res)
       if(res.items && res.items.length) {
         this.systemLinks = res.items[0].properties.systemLinks;
+        this.dupSystemLink = res.items[0].properties.systemLinks;
       } else {
         this.systemLinks = [];
       }
