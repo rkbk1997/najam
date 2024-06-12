@@ -31,141 +31,23 @@
       </form>
 
       <div class="row gx-md-5 gx-2">
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6" *ngFor="let item of employeeList">
           <div class="empcard p-4 pb-3">
             <div class="d-flex flex-row mb-3">
               <div class="card-image ">
-                <img src="assets/img/profile.png" class="card-img-top img-fluid" alt="...">
+                <img [src]="getImageUrl(item.properties.picture[0].url)"  class="card-img-top img-fluid" alt="...">
               </div>
               <div class="card-body">
-                <a href="#" class="card-title">محمد خالد احمد الغانم</a>
-                <p class="card-dec ">مبرمج أول شيربوينت</p>
-                <p class="card-dec ">إدارة تقنية المعلومات</p>
-
-
-
+                <a href="#" class="card-title" [innerHTML]="item.name" ></a>
+                <p class="card-dec ">{{item?.properties?.position}}</p>
+                <p class="card-dec ">{{item?.properties?.department}}</p>
                 <h6 class="fw-normal d-flex align-items-center">
                   <img src="assets/img/calendargreen.svg" alt="" class="img-fluid">
-                  <span class="px-2">تاريخ الالتحاق 20-05-2023</span>
+                  <span class="px-2"> {{'joining_date' | translate }}&nbsp; {{item.properties.joinDate | date: 'dd-MM-YYYY'}}</span>
                 </h6>
-
-
-
-
               </div>
             </div>
-            <p class="main_dec">وريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
-              ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر
-              عندما قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمثابة دليل أو مرجع
-              شكلي لهذه الأحرف. خمسة قرون من الزمن لم تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله الأصلي في
-              الطباعة والتنضيد الإلكتروني. انتشر بشكل كبير في ستينيّات هذا القرن مع إصدار رقائق "ليتراسيت" (Letraset)
-              البلاستيكية تحوي مقاطع من هذا النص، وعاد لينتشر مرة أخرى مؤخراَ مع ظهور برامج النشر الإلكتروني مثل "ألدوس
-              بايج مايكر" (Aldus PageMaker) والتي حوت أيضاً على نسخ من نص لوريم إيبسوم.</p>
-          </div>
-
-        </div>
-        <div class="col-12 col-lg-6">
-          <div class="empcard p-4 pb-3">
-            <div class="d-flex flex-row mb-3">
-
-              <div class="card-image ">
-                <img src="assets/img/profile.png" class="card-img-top img-fluid" alt="...">
-              </div>
-
-              <div class="card-body">
-                <a href="#" class="card-title">محمد خالد احمد الغانم</a>
-                <p class="card-dec ">مبرمج أول شيربوينت</p>
-                <p class="card-dec ">إدارة تقنية المعلومات</p>
-
-
-
-                <h6 class="fw-normal d-flex align-items-center">
-                  <img src="assets/img/calendargreen.svg" alt="" class="img-fluid">
-                  <span class="px-2">تاريخ الالتحاق 20-05-2023</span>
-                </h6>
-
-
-
-
-              </div>
-            </div>
-            <p class="main_dec">وريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
-              ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر
-              عندما قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمثابة دليل أو مرجع
-              شكلي لهذه الأحرف. خمسة قرون من الزمن لم تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله الأصلي في
-              الطباعة والتنضيد الإلكتروني. انتشر بشكل كبير في ستينيّات هذا القرن مع إصدار رقائق "ليتراسيت" (Letraset)
-              البلاستيكية تحوي مقاطع من هذا النص، وعاد لينتشر مرة أخرى مؤخراَ مع ظهور برامج النشر الإلكتروني مثل "ألدوس
-              بايج مايكر" (Aldus PageMaker) والتي حوت أيضاً على نسخ من نص لوريم إيبسوم.</p>
-          </div>
-
-        </div>
-        <div class="col-12 col-lg-6">
-          <div class="empcard p-4 pb-3">
-            <div class="d-flex flex-row mb-3">
-
-              <div class="card-image ">
-                <img src="assets/img/profile.png" class="card-img-top img-fluid" alt="...">
-              </div>
-
-              <div class="card-body">
-                <a href="#" class="card-title">محمد خالد احمد الغانم</a>
-                <p class="card-dec ">مبرمج أول شيربوينت</p>
-                <p class="card-dec ">إدارة تقنية المعلومات</p>
-
-
-
-                <h6 class="fw-normal d-flex align-items-center">
-                  <img src="assets/img/calendargreen.svg" alt="" class="img-fluid">
-                  <span class="px-2">تاريخ الالتحاق 20-05-2023</span>
-                </h6>
-
-
-
-
-              </div>
-            </div>
-            <p class="main_dec">وريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
-              ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر
-              عندما قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمثابة دليل أو مرجع
-              شكلي لهذه الأحرف. خمسة قرون من الزمن لم تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله الأصلي في
-              الطباعة والتنضيد الإلكتروني. انتشر بشكل كبير في ستينيّات هذا القرن مع إصدار رقائق "ليتراسيت" (Letraset)
-              البلاستيكية تحوي مقاطع من هذا النص، وعاد لينتشر مرة أخرى مؤخراَ مع ظهور برامج النشر الإلكتروني مثل "ألدوس
-              بايج مايكر" (Aldus PageMaker) والتي حوت أيضاً على نسخ من نص لوريم إيبسوم.</p>
-          </div>
-
-        </div>
-        <div class="col-12 col-lg-6">
-          <div class="empcard p-4 pb-3">
-            <div class="d-flex flex-row mb-3">
-
-              <div class="card-image ">
-                <img src="assets/img/profile.png" class="card-img-top img-fluid" alt="...">
-              </div>
-
-              <div class="card-body">
-                <a href="#" class="card-title">محمد خالد احمد الغانم</a>
-                <p class="card-dec ">مبرمج أول شيربوينت</p>
-                <p class="card-dec ">إدارة تقنية المعلومات</p>
-
-
-
-                <h6 class="fw-normal d-flex align-items-center">
-                  <img src="assets/img/calendargreen.svg" alt="" class="img-fluid">
-                  <span class="px-2">تاريخ الالتحاق 20-05-2023</span>
-                </h6>
-
-
-
-
-              </div>
-            </div>
-            <p class="main_dec">وريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
-              ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر
-              عندما قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمثابة دليل أو مرجع
-              شكلي لهذه الأحرف. خمسة قرون من الزمن لم تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله الأصلي في
-              الطباعة والتنضيد الإلكتروني. انتشر بشكل كبير في ستينيّات هذا القرن مع إصدار رقائق "ليتراسيت" (Letraset)
-              البلاستيكية تحوي مقاطع من هذا النص، وعاد لينتشر مرة أخرى مؤخراَ مع ظهور برامج النشر الإلكتروني مثل "ألدوس
-              بايج مايكر" (Aldus PageMaker) والتي حوت أيضاً على نسخ من نص لوريم إيبسوم.</p>
+            <p class="main_dec" [innerHTML]="item?.properties?.bodyContent.markup"></p>
           </div>
         </div>
       </div>
