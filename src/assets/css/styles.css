@@ -551,11 +551,12 @@ p {
   color: var(--white);
   line-height: 16px;
   border-radius: 8px;
-  padding: 2px 20px 8px;
+  padding: 2px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   min-width: 200px;
+  height: 28px;
   width: fit-content;
   gap: 6px;
 }
@@ -1424,6 +1425,9 @@ a {
 [dir="rtl"] .owl-carousel.box-carousel .owl-dots {
   right: 25px;
   left: inherit;
+}
+[dir="rtl"]  .btn.btn-default {
+  padding-bottom: 8px;
 }
 [dir="rtl"] .btn.btn-default svg {
   transform: none;
