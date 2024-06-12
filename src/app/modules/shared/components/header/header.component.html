@@ -18,10 +18,10 @@
               <img src="assets/img/dashboardboxicon.svg" class="img-fluid">
               <div class="systemBoxLabel fw-medium">{{'systems_administration' | translate }}</div>
             </div>
-            <div class="systemBox d-flex align-items-center">
+            <!-- <div class="systemBox d-flex align-items-center">
               <img src="assets/img/star.svg" class="img-fluid">
               <div class="systemBoxLabel fw-medium">{{'my_systems' | translate}}</div>
-            </div>
+            </div> -->
           </div>
           <a role="button" class="languageIcon fw-bold ms-3" (click)="changeLanguage()">{{userLanguage === 'ar' ? 'EN' : 'AR' | uppercase}}</a>
           <div class="notificationIcon position-relative ms-3">
@@ -183,18 +183,12 @@
   </div>
   <div class="offcanvas-body">
     <form class="d-flex position-relative mt-3">
-      <input class="form-control fs-13" type="search" placeholder="ابحث عن نظام" aria-label="Search">
+      <input class="form-control fs-13" type="search" placeholder="{{'find_a_system' | translate }}" aria-label="Search">
       <button class="btn-search" type="submit"></button>
     </form>
     <ul class="nav flex-column p-0 my-3">
-      <li class="nav-item">
-        <a class="nav-link py-2 active" aria-current="page" href="#">اسم النظام هنا اسم النظام هنا <span class="addBookmark mx-2"></span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link py-2" href="#">اسم النظام هنا اسم النظام هنا <span class="addBookmark mx-2"></span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link py-2" href="#">اسم النظام هنا اسم النظام هنا <span class="addBookmark mx-2"></span></a>
+      <li class="nav-item" *ngFor="let item of systemLinks">
+        <a class="nav-link py-2 active" aria-current="page" href="{{item.url}}" target='{{item.target}}'>{{item.title}}<span class="addBookmark mx-2"></span></a>
       </li>
     </ul>
   </div>

@@ -32,7 +32,11 @@ export class HeaderComponent implements OnInit {
   }
 
   openServicePage() {
-    this.router.navigate(['/main/admin/services']);
+    const ele = document.createElement('a');
+    ele.href = 'https://najm.kyal.in/umbraco/login';
+    ele.target = '_blank'
+    ele.click();
+    // this.router.navigate(['/main/admin/services']);
   }
 
   changeLanguage() {
@@ -52,9 +56,13 @@ export class HeaderComponent implements OnInit {
   }
 
   getSystemExternalLinks() {
-    this.dashboard.getRcoards(this.userLanguage, alias.FRONTPAGE, 0, 10).subscribe((res: any)=> {
-      console.log(`🚀 ~ HeaderComponent ~ this.dashboard.getRcoards ~ res:`, res)
-      
+    this.dashboard.getSystemLink(this.userLanguage, alias.FRONTPAGE).subscribe((res: any)=> {
+      console.log(`🚀 ~ HeaderComponent ~ this.dashboard.getSystemLink ~ res:`, res)
+      if(res.items && res.items.length) {
+        this.systemLinks = res.items[0].properties.systemLinks;
+      } else {
+        this.systemLinks = [];
+      }
     });
   }
 }

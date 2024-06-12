@@ -17,6 +17,7 @@ export class DashboardComponent implements OnInit {
   stars: any[] = []
   mediaReport: any[] = [];
   tawasols: any[] = [];
+  systemLinks: any;
 
   /**
    * constructor
@@ -44,6 +45,7 @@ export class DashboardComponent implements OnInit {
     this.getStars();
     this.getMediaReport();
     this.getTawasols();
+    this.getSystemExternalLinks();
   }
 
   /**
@@ -108,6 +110,17 @@ export class DashboardComponent implements OnInit {
    */
   getImageUrl(url: string) {
     return this.dashboardService.getImageUrl(url);
+  }
+
+  getSystemExternalLinks() {
+    this.dashboardService.getSystemLink(this.appLang, alias.FRONTPAGE).subscribe((res: any)=> {
+      if(res.items && res.items.length) {
+        this.systemLinks = res.items[0].properties;
+        console.log(`🚀 ~ DashboardComponent ~ this.dashboardService.getSystemLink ~ systemLinks:`, this.systemLinks)
+      } else {
+        this.systemLinks = [];
+      }
+    });
   }
 
   /**

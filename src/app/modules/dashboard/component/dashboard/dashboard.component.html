@@ -56,7 +56,7 @@
               </div>
               <div class="boxContent">
                 <p class="fs-17 pb-1 mb-0" *ngFor="let item of stars" [innerHTML]="item.properties.bodyContent.markup"></p>
-                <a href="#" class="btn btn-default bg-blue mx-auto fs-15 fw-bold mx-auto">
+                <a target='_blank' href="{{ systemLinks?.traningCoursesLink  ? systemLinks?.traningCoursesLink[0]?.url : '#'}}" class="btn btn-default bg-blue mx-auto fs-15 fw-bold mx-auto">
                   {{ 'go_to_the_najm_academy_platform' | translate }}
                 </a>
               </div>
@@ -103,14 +103,14 @@
           </div>
           <div class="boxContent evnt-slide">
             <div class="owl-carousel owl-theme box-carousel evntslide">
-              <div class="item" *ngFor="let item of [1,2,3]">
-                <p class="fw-bold fs-20 text-green mb-1">أشكال الاحتيال الداخلي</p>
+              <div class="item" *ngFor="let item of tawasols">
+                <p class="fw-bold fs-20 text-green mb-1" [innerHTML]="item.properties.bodyContent.markup"></p>
                 <p class="fs-17 m-0 p-0">
                   <span class="me-1 text-brown"><img src="assets/img/calendarbrown.svg" alt=""
-                      class="img-fluid"></span>20-05-2023
+                      class="img-fluid"></span>{{item.properties.tawasolDate | date: 'dd-MM-YYYY'}}
                 </p>
                 <div class="mt-1 mx-auto d-flex align-items-center justify-content-center">
-                  <img src="assets/img/image003.png" alt="" class="img-fluid evntslide">
+                  <img [src]="getImageUrl(item.properties.mainPictures[0].url)" alt="" class="img-fluid evntslide">
                 </div>
               </div>
             </div>
@@ -128,7 +128,7 @@
         <div class="roundBox bg-green p-4 h-100 d-flex flex-column justify-content-between">
           <div class="d-flex justify-content-between mt-3">
             <div>
-              <h2 class="fs-20 fw-bold text-white">رصيد إجازاتك الحالي</h2>
+              <h2 class="fs-20 fw-bold text-white">{{'your_current_leave_balance' | translate }}</h2>
               <p class="fs-1 fw-medium text-white">15يوم</p>
             </div>
             <div class="cLogo">
@@ -136,7 +136,7 @@
             </div>
           </div>
           <div class="boxContent d-flex justify-content-center mt-3">
-            <a href="#" class="btn btn-default bg-light-green text-green p-2">{{'go_to_a_managed_system' | translate}} <svg
+            <a href="{{systemLinks?.mADARSystemLink[0]?.url}}" target="_blank" class="btn btn-default bg-light-green text-green p-2">{{'go_to_a_managed_system' | translate}} <svg
                 xmlns="http://www.w3.org/2000/svg" width="8.017" height="14.035" viewBox="0 0 8.017 14.035">
                 <path id="Path_13856" data-name="Path 13856" d="M644.169,132.343l-5.6,5.6,5.6,5.6"
                   transform="translate(-637.566 -130.929)" fill="none" stroke="#32835b" stroke-linecap="round"
@@ -409,17 +409,17 @@
               <div class="headingIcon rounded-circle bg-orange d-flex align-items-center justify-content-center">
                 <img src="/assets/img/profilewhiteicon.svg" class="img-fluid p-2">
               </div>
-              <h2 class="fs-20 fw-bold mb-0">نجومنا الجدد</h2>
+              <h2 class="fs-20 fw-bold mb-0">{{'our_new_stars' | translate }}</h2>
             </div>
-            <a routerLink="/main/dashboard/employee-list" class="btn btn-green">عرض الكل</a>
+            <a routerLink="/main/dashboard/employee-list" class="btn btn-green">{{'view_all' | translate}}</a>
           </div>
           <div class="boxContent bg-white shadow-none">
             <ul class="list-unstyled mt-4">
-              <li class="media align-items-center mb-3" routerLink="/main/dashboard/employee-details" *ngFor="let item of [1,2,3,4]">
-                <div class="shadow rounded-2 ms-3"><img src="/assets/img/profile.png" class="img-fluid p-0"></div>
+              <li class="media align-items-center mb-3" routerLink="/main/dashboard/employee-details" *ngFor="let item of stars">
+                <div class="shadow rounded-2 ms-3"><img style='width: 100px; height: 100px;' [src]="getImageUrl(item.properties.picture[0].url)" class="img-fluid p-0"></div>
                 <div class="media-body">
-                  <h5 class="fs-15 mt-0 mb-1">محمد خالد احمد الغانم</h5>
-                  <p class="fs-13 fw-light mb-0">.NET Developer</p>
+                  <h5 class="fs-15 mt-0 mb-1">{{item.properties.pageTitle}}</h5>
+                  <p class="fs-13 fw-light mb-0">{{item.properties.position}}</p>
                 </div>
               </li>
             </ul>
