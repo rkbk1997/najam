@@ -20,20 +20,19 @@
   --light-green: #b8d1c5;
 }
 
-* {
+*::-webkit-scrollbar{
   scrollbar-width: thin;
-  scrollbar-color: #32835b;
+  width: 6px;
+  height: 6px;
 }
 
-*::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #7a7a7a;
+  background-color: rgba(0, 0, 0, 1);
   border-radius: 50px;
-  border: 2px solid #7a7a7a;
 }
 
 .text-white {
@@ -214,6 +213,8 @@ p {
   top: 60px !important;
   min-width: 277px;
   overflow: hidden;
+  overflow-y: auto;
+  height: calc(100vh - 90px);
   background-color: var(--white);
   border-radius: 30px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
@@ -764,6 +765,11 @@ p {
   border-radius: 0 30px 30px 0;
   background-color: var(--gray-dark);
   max-width: 277px;
+}
+.sideManuPanel.offcanvas-start{
+  left: 0;
+  visibility: visible;
+  transform: translate(0);
 }
 .sideManuPanel .btn-close {
   position: absolute;
@@ -1568,6 +1574,66 @@ a {
 }
 
 /* Responsive */
+@media screen and (min-width: 1920px){ 
+  .userMemu .dropdown-menu{
+    display: block;
+  }
+  .userMemu .dropdown-menu.show{
+    display: none;
+  }
+  .offcanvas-backdrop.show {
+    opacity: 0;
+    display: none !important;
+  }
+  .offcanvas-backdrop{
+    left: 0;
+    right: inherit;
+  }
+  .hide-sm.sideManuPanel{
+    right: inherit;
+    left: 0;
+    visibility: visible;
+    transform: translate(0);
+  } 
+  .hide-sm.sideManuPanel.show{   
+    transform: translate(-100%);
+  } 
+  [dir="rtl"] .offcanvas-backdrop{
+    left: inherit;
+  }
+  .sideManuPanel.offcanvas-end{
+    right: 0;
+    visibility: visible;
+    transform: translate(0);
+  } 
+}
+@media screen and (max-width: 1919px){
+  .overlay.hide-overlay{
+    display: none;
+  }
+  .overlay.show-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .userMemu .dropdown-menu.hide-sm{
+    display: none;
+  }
+  .offcanvas-backdrop.show {
+    opacity: 0.1;
+    display: block !important;
+  }
+  .sideManuPanel.offcanvas-start{
+    left: inherit;
+    visibility: visible;
+    transform: translate(-100%);
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .systemBoxLabel{
     display: none;
