@@ -669,11 +669,13 @@ p {
   outline: none;
   background-color: var(--bg-light-green);
 }
-.special-note {
+.special-note.start-0 {
+  right: 0 !important;
+  left: inherit !important;
   color: #e6c068;
   padding: 2px 10px 5px;
   background-color: #929292;
-  border-radius: 15px 0 15px 0;
+  border-radius: 0 15px 0 15px;
 }
 .bottomSection .boxContent {
   min-height: 300px;
@@ -1563,6 +1565,11 @@ a {
 [dir="rtl"]  .list-unstyled li .ms-3{
   margin-left: 1rem !important;
   margin-right: 0rem !important;
+}
+[dir="rtl"] .special-note.start-0 {
+  left: 0 !important;
+  right: inherit !important;
+  border-radius: 15px 0 15px 0;
 }
 
 /* Responsive */
