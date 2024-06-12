@@ -6,5 +6,6 @@ export const alias = {
   EVENT: 'event',
   DOCUMENT: 'document',
   REFERENDUMITEM: 'referendumitem',
-  STARS: 'stars'
+  STARS: 'stars',
+  FRONTPAGE: 'frontPage'
 }

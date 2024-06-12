@@ -114,10 +114,11 @@ export class DashboardComponent implements OnInit {
    * set dynamic properties for owl carousel
    */
   setCarouselAction() {
+    const pos =   this.appLang === 'ar';
     (function ($) {
       $(document).ready(function () {
         $('.event-carousel').owlCarousel({
-          rtl: true,
+          rtl: pos,
           loop: false,
           margin: 10,
           responsiveClass: true,
