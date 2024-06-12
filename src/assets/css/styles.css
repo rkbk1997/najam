@@ -18,7 +18,6 @@
   --bg-light-green: #d6e6de;
   --input-border: #bebebe;
   --light-green: #b8d1c5;
-  --roboto:"Roboto", sans-serif;
 }
 
 * {
@@ -58,13 +57,9 @@
 }
 
 body {
-  font-family: var(--roboto);
+  font-family: var(--primaryFont);
   padding: 0px;
   color: var(--gray-dark);
-}
-
-[dir="rtl"] body {
-  font-family: var(--primaryFont);
 }
 
 a {
