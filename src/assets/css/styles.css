@@ -613,7 +613,7 @@ p {
   color: var(--white);
   font-size: 24px !important;
   position: relative;
-  top: -5px;
+  top: -3px;
 }
 .owl-carousel.box-carousel button.owl-dot {
   width: 10px;
@@ -802,11 +802,13 @@ p {
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
 }
 .sideManuPanel .nav-link {
+  display: flex;
   color: var(--white);
   font-size: 15px;
   font-weight: 500;
   text-decoration: none;
   padding-left: 25px;
+  padding-right: 0px;
   background: url(../img/docs.svg) no-repeat center left;
   background-size: 12px auto;
 }
@@ -1363,6 +1365,13 @@ a {
   width: 120px;
   min-width: 120px;
 }
+.addBookmark{  
+  width: 20px;  
+  flex: none;
+  vertical-align: middle;
+  background: url(../img/star.svg) no-repeat center right;
+  background-size: 18px auto;
+}
 
 /* Arabic Css */
 [dir="rtl"] *{
@@ -1442,6 +1451,12 @@ a {
 [dir="rtl"] .owl-carousel.event-carousel .owl-nav button.owl-prev {
   transform: none;
 }
+[dir="rtl"]  .owl-carousel.box-carousel .owl-nav button.owl-next:hover span,
+[dir="rtl"]  .owl-carousel.box-carousel .owl-nav button.owl-next span,
+[dir="rtl"]  .owl-carousel.box-carousel .owl-nav button.owl-prev:hover span,
+[dir="rtl"]  .owl-carousel.box-carousel .owl-nav button.owl-prev span {
+  top: -5px;
+}
 [dir="rtl"] .main-carousel.main-carousel .owl-nav {
   right: inherit;
   left: 10px;
@@ -1504,6 +1519,7 @@ a {
 }
 [dir="rtl"] .sideManuPanel .nav-link {
   padding-right: 25px;
+  padding-left: 0px;
   background: url(../img/docs.svg) no-repeat center right;
 }
 [dir="rtl"] .sideManuPanel .btn-search {
