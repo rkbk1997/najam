@@ -1568,6 +1568,61 @@ a {
 }
 
 /* Responsive */
+@media screen and (min-width: 1920px){ 
+  .userMemu .dropdown-menu{
+    display: block;
+  }
+  .userMemu .dropdown-menu.show{
+    display: none;
+  }
+  .offcanvas-backdrop.show {
+    opacity: 0;
+    display: none !important;
+  }
+  .offcanvas-backdrop{
+    left: 0;
+    right: inherit;
+  }
+  .hide-sm.sideManuPanel{
+    right: inherit;
+    left: 0;
+    visibility: visible;
+    transform: translate(0);
+  } 
+  .hide-sm.sideManuPanel.show{   
+    transform: translate(-100%);
+  } 
+  [dir="rtl"] .offcanvas-backdrop{
+    left: inherit;
+  }
+  [dir="rtl"]  .sideManuPanel{
+    right: 0;
+    visibility: visible;
+    transform: translate(0);
+  } 
+}
+@media screen and (max-width: 1919px){
+  .overlay.hide-overlay{
+    display: none;
+  }
+  .overlay.show-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .userMemu .dropdown-menu.hide-sm{
+    display: none;
+  }
+  .offcanvas-backdrop.show {
+    opacity: 0.1;
+    display: block !important;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .systemBoxLabel{
     display: none;
